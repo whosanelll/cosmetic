@@ -4,21 +4,24 @@
   text-align: center;
   width: 100%;
 }
-header {
-    background-image: url(https://kartinkin.net/uploads/posts/2020-07/1595787277_2-p-fon-rozovii-mramor-2.jpg);
-    height: 90px;
-  }
 
-  .head {
-    font-size: 390%;
-    text-align: center;
-    font-family: BOOK ANTIQUA;
-    color:  #870053;
-  }
-  .ccc{
-    text-align: center;
-    font-size: 150%;
-  }
+header {
+  background-image: url(https://kartinkin.net/uploads/posts/2020-07/1595787277_2-p-fon-rozovii-mramor-2.jpg);
+  height: 90px;
+}
+
+.head {
+  font-size: 390%;
+  text-align: center;
+  font-family: BOOK ANTIQUA;
+  color: #870053;
+}
+
+.ccc {
+  text-align: center;
+  font-size: 150%;
+}
+
 p {
   color: #312727;
   font-size: 30px;
@@ -32,7 +35,8 @@ h2 {
 }
 
 body {
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   background-image: url('whitee.jpg');
 }
 
@@ -41,7 +45,6 @@ header {
   height: 50%;
   padding-top: 3px;
   padding-bottom: 5px;
-
   width: 100%;
 }
 
@@ -103,19 +106,20 @@ body, html {
   display: inline-block;
   padding: 10px 25px;
   color: white;
-  background-color: #DB7093;;
+  background-color: #DB7093;
+  ;
   text-align: center;
   cursor: pointer;
 }
+
 /*  ЦВЕТ ПРИ НАВЕДЕНИИ КНОПКИ МЕНЯЕШЬ ЗДЕСЬ*/
 .hero-text button:hover {
-  background-color: #555;
-  color: white;
+  background-color: #870053;
+color: #870053
   transition: background-color .2s;
 }
 
-
-.container-fluid{
+.container-fluid {
   padding: 0;
 }
 
@@ -127,14 +131,13 @@ body, html {
 }
 
 /* List element */
-.gradient-list li{
+.gradient-list li {
   counter-increment: index;
-list-style-type: none;
+  list-style-type: none;
   align-items: center;
   padding: 12px 0;
   box-sizing: border-box;
 }
-
 
 /* Element counter */
 .gradient-list li::before {
@@ -152,44 +155,31 @@ list-style-type: none;
   -webkit-text-fill-color: transparent;
 }
 
-
 /* Element separation */
-.gradient-list li + .gradient-list li {
-  border-top: 1px solid rgba(255,255,255,0.2);
+.gradient-list li+.gradient-list li {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-
-
-
-
-
-
-
-
-
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 350px;
-    margin: auto;
-    border-radius: 10px;
-    font-family: 'Roboto Slab', serif; font-weight: 400;letter-spacing: 0.05em; font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-size: 20px;
 }
-.card img{
-    width:100%; border-top-left-radius: 10px; border-top-right-radius: 10px
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px
 }
 
-
-
-
-
-
-
-
-
-@use postcss-preset-env {
-  stage: 0;
-  autoprefixer: {
-    grid: true;
-  }
-  browsers: last 2 versions
-}
+@media only screen and (max-width: 1200px) {
+     /* For mobile phones: */
+     .hero-image {
+        height: 1000px;
+     }
+   }
